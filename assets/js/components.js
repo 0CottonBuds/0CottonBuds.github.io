@@ -106,18 +106,6 @@ featuredTemplate.innerHTML = `
 
                 <!-- Feature -->
                     <section class="box feature">
-                        <a href="/blogs/webdev/create-blog/create-blog.html" class="image featured"><img src="/images/pic02.jpg" alt="" /></a>
-                        <h3><a href="/blogs/webdev/create-blog/create-blog.html">This Blog</a></h3>
-                        <p>
-                            This blog is made from a template I downloaded online. I will tell you how I made this so you can make your own blog with little to no ccs, html, and javascript knowledge!
-                        </p>
-                    </section>
-
-            </div>
-            <div class="col-3 col-6-medium col-12-small">
-
-                <!-- Feature -->
-                    <section class="box feature">
                         <a href="/blogs/gamedev/gamedev-start/gamedev-start.html" class="image featured"><img src="/images/pic03.jpg" alt="" /></a>
                         <h3><a href="/blogs/gamedev/gamedev-start/gamedev-start.html">My game development Journey</a></h3>
                         <p>
