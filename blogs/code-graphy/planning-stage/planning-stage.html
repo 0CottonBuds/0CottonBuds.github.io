@@ -79,91 +79,67 @@
                                         <article class="box page-content">
 
                                             <header>
-                                                <h2>Generating a sine wave in unity</h2>
-                                                <p>Trying to figure it out myself</p>
+                                                <h2>CodeGraphy Planning Stage</h2>
+                                                <p>Information before action.</p>
                                                 <ul class="meta">
-                                                    <li class="icon fa-clock">June, 25 2023</li>
+                                                    <li class="icon fa-clock">July, 25 2023</li>
                                                 </ul>
                                             </header>
 
                                             <section>
-                                                <span class="image featured"><img src="/images/pic03.jpg" alt="" /></span>
+                                                <span class="image featured"><img src="code-graph.png" alt="" /></span>
+                                                <h1>What is CodeGraphy</h1>
                                                 <p>
-                                                    I've always wondered what is the use of the math they teach us at school.
-                                                    Even now I never used the pythagoras theorem, calculus, and trigonometry to
-                                                    solve any real life problems. I've always thought that maybe only smart people
-                                                    with smart problems can use this smart solutions. Up until I used trigonometry
-                                                    in game development. It's really fascinating to figure out how these math functions
-                                                    can help me to manipulate values to a certain way that I want. Today I want to generate
-                                                    a sine wave from scratch with no tutorial until I give up. Why suffer you say? First of all I love figuring
-                                                    out things like these and another one is it's a great learning experience that will stimulate
-                                                    your problem solving skills. I also suggest you do these kinds of "training" you might like it
-                                                    more than you think. So why the sine wave? Honestly the reason was because I always hear this sine
-                                                    wave every time I watch a game dev video and I got curious as to what and why it is used. In my research
-                                                    I figured out that sine can be seen in many aspect in real life from springs, electricity, or even sound.
-                                                    Aside from that the sine wave have this ease in and ease out motion that gives the illusion of naturallity
-                                                    if that's even a word. It's more natural than per se a linear curve. This ease in and ease out motion is
-                                                    widely used in animation and world generation to make it more "natural" to our eyes.
+                                                    All developers have gone through the headache of understanding a block of code.
+                                                    Even their own code. Personally to counteract this I use graphs to document what
+                                                    I wrote to make it easier for myself. But as the lazy bum I am I stopped doing it
+                                                    while ago because its tedious and I only use it like once or twice so the hassle
+                                                    of creating one for every code.
+                                                </p>
+
+                                                <p>I have seen CodeSee but it is not the functionality I am looking for. It gives a map
+                                                    of the codebase but it's just that. The graph I usually make is more like a machination
+                                                    graph that outlines what the code actually does. After thinking a while I decided to create
+                                                    CodeGraphy a tool to convert code to interactive graphs.
+                                                </p>
+
+                                                <h1>Plan</h1>
+                                                <p>
+                                                    I'm currently learning c++ and I figured that it is gonna be a great first project in
+                                                    the language. But I don't really know where to start to create this project so I did
+                                                    some research. What I want closely resembled creating a programming language from scratch.
+                                                    Thankfully there is a lot of resources on creating a programming language I specifically
+                                                    watched <a href="https://youtu.be/1WpKsY9LBlY">this tutorial</a> from freecodecamp.com.
+                                                    It introduces the concept with python a language I'm familliar so the learning process was
+                                                    quite easy.
+                                                </p>
+                                                <span class="image featured"><img src="code-Token.png" alt="" /></span>
+                                                <p>
+                                                    After I breezed through the tutorial I learned a few things. Lexical analysis or tokenization
+                                                    is the process of chunking the code to tokens. With the code tokenize we can process it much
+                                                    easier. This is exactly what I need for the project. The tutorial also mentioned things like
+                                                    parsing the tokens to a tree for execution but I don't need that so I just skipped most of the
+                                                    tutorial.
+                                                </p>
+
+                                                <h1>To the paper</h1>
+                                                <p>
+                                                    I actually like putting my ideas in paper instead of storing them in the computer. Reason
+                                                    is I don't have a second monitor to look at the ideas while writing code, and if I wrote
+                                                    it on the computer I just often forgot about them and never read them. Writing in paper just
+                                                    suits me. I drew a sample graph of a sample function in the paper and wrote what are the elements
+                                                    that I need to convert code to the graph. The first programming language I will convert is python
+                                                    because it is the main programming language I use but I will add more in the future.
+                                                </p>
+
+                                                <h1>Go to the next article hehe</h1>
+                                                <p>
+                                                    I wrote sample tokens for this but I will show it in the next blog post where I actually start development.
+                                                    In the next article I will actually start development and hopefully create the program without the ui.
+                                                    I plan to add the UI after I fleshed out the actual conversion so I could focus on the UI and not fix every
+                                                    little conversion bug.
                                                 </p>
                                             </section>
-
-                                            <section>
-                                                <h3>A little bit of theory</h3>
-                                                <span class="image featured"><img src="sine-theory.png" alt="" /></span>
-                                                <p>
-                                                    Now the boring stuff. You can skip this part if you want to but tbh you will miss a lot because
-                                                    you probably wouldn't understand most of the things further down there if you skip this. With
-                                                    that being said what even is sine google said it is the ratio of the opposite and hypotenuse
-                                                    of an angle. Okay all of that magic math words probably went through your head and honestly I also
-                                                    don't get it but based on my research we can get a sine wave with these steps. <br> <br> 1. Picking a point in the circumference of
-                                                    a circle.<br> <br> 2. After picking a point in the circle we can also say that we now have an angle. Here for example I picked
-                                                    this point a on the circumference of the circle no I have an angle from that point to the middle of the circle and then
-                                                    to the 0 degrees of the circle. <br> <br> 3. Lastly we just need to perform the sine function into the angle. Also if we
-                                                    want a wave we need to do this multiple times with each iteration we move the point along the circle.
-                                                </p>
-                                            </section>
-
-                                            <section>
-                                                <h3>Let's jump into it</h3>
-                                                <p>
-                                                    Now for the fun stuff actually implementing the theory.I know that some of you now have an idea
-                                                    on how to implement this on code after reading the theory. After reading and researching this it
-                                                    made me realize that it's not that complicated. This is my first iteration. First we declare the
-                                                    angle variable and increment it over time with the time multiplier as it's multiplier so we can
-                                                    control how fast it oscillates. Now for the sine function we just pass the angle there with a magnitude
-                                                    as it's multiplier to make it easier to see. The number 6.283 is the total radians(you can think of these
-                                                    as the points in the circumference of the circle) in the circle. So after we circled the while circle
-                                                    we just go back to the start hence angle = 0.
-
-                                                </p>
-                                                <span class="image featured"><img src="sine-wave-first-iteration.png" alt="" /></span>
-                                                <iframe width="850" height="480" src="https://www.youtube.com/embed/cOwupqnfhFI" title="Sine wave generation fail" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                                                <p>
-                                                    As you can see it just jitters and it's not exactly how sine movement move. after some debugging
-                                                    I found the problem. At the start of the update function at line 13 I reset the angle variable every time
-                                                    resulting that jittery motion because it resets the angle every time. Also after further testing I realized
-                                                    that the circle radius should not be multiplied on the total radians but instead multiplied to the sine product
-                                                    instead. With the fixes implemented here are the results.
-                                                </p>
-                                                <span class="image featured"><img src="sine-wave-second-iteration.png" alt="" /></span>
-                                                <iframe width="850" height="480" src="https://www.youtube.com/embed/QocS7LCo5V0" title="Sine wave test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                                                <p>
-                                                    The sine wave generator works perfectly. We can alter the serialized fields to have different
-                                                    variation of the sine wave. We can increase the circle radius to increase the amplitude or we
-                                                    can increase the time to increase the rate of oscillation.
-                                                </p>
-
-                                                <h3>Wrapping things up</h3>
-                                                <p>
-                                                    Writing a sine wave generator is actually much more simpler that I thought. While this project is not much
-                                                    of a challenge I plan to continue posting more of these math to programming things in the future after I made
-                                                    a youtube video out of this. Maybe my next one will be arrow movement and projectile movement in general. If you
-                                                    wish to be updated please come back to this blog!
-                                                </p>
-                                            </section>
-
                                         </article>
 
                                     </div>
