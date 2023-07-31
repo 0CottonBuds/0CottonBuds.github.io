@@ -130,7 +130,7 @@ featuredTemplate.innerHTML = `
 
                 <!-- Feature -->
                     <section class="box feature">
-                        <a href="/blogs/code-graphy/code-graphy-start/code-graphy-start.html" class="image featured"><img src="/images/pic04.jpg" alt="" /></a>
+                        <a href="/blogs/code-graphy/code-graphy-start/code-graphy-start.html" class="image featured"><img src="/blogs/code-graphy/planning-stage/code-graph.png" alt="" /></a>
                         <h3><a href="/blogs/code-graphy/code-graphy-start/code-graphy-start.html">CodeGraphy</a></h3>
                         <p>
                             CodeGraphy is another side project that converts a codebase to an interactive graph.
@@ -193,7 +193,7 @@ blogTemplate.innerHTML = `
                             <h3><a href="/blogs/webdev/create-blog/create-blog.html">How to create your own blog!</a></h3>
                             <p>With little to no html, ccs, or javascript knowledge!</p>
                         </header>
-                        <a href="/blogs/webdev/create-blog/create-blog.html" class="image featured"><img src="/images/pic05.jpg" alt="" /></a>
+                        <a href="/blogs/webdev/create-blog/create-blog.html" class="image featured"><img src="/images/pic02.jpg" alt="" /></a>
                         <p>
                             I've set upped this blog in less than 10 mins. No I wasn't joking. you can also do this by yourself
                             I'm gonna teach you how I did this blog so you can also do it by yourself.
