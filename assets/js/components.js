@@ -223,7 +223,7 @@ blogTemplate.innerHTML = `
                         <li>
                             <article class="box post-summary">
                                 <h3><a href="/blogs/gamedev/visualizing-math-with-unity/generating-sine-wave/generating-sine-wave.html">Generating Sine Wave</a></h3>
-                               >p>
+                               <p>
                                     Let's visualize math using Unity.
                                </p>
                             </article>
