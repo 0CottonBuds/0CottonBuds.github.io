@@ -198,51 +198,46 @@ blogTemplate.innerHTML = `
                     <ul class="divided">
                         <li>
                             <article class="box post-summary">
-                                <h3><a href="#">A Subheading</a></h3>
-                                <ul class="meta">
-                                    <li class="icon fa-clock">6 hours ago</li>
-                                    <li class="icon fa-comments"><a href="#">34</a></li>
-                                </ul>
+                                <h3><a href="/blogs/code-graphy/first-steps/first-steps.html">CodeGraphy's First Steps</a></h3>
+                                <p>
+                                    First steps in development of my new project CodeGraphy
+                                </p>
                             </article>
                         </li>
                         <li>
                             <article class="box post-summary">
-                                <h3><a href="#">Another Subheading</a></h3>
-                                <ul class="meta">
-                                    <li class="icon fa-clock">9 hours ago</li>
-                                    <li class="icon fa-comments"><a href="#">27</a></li>
-                                </ul>
+                                <h3><a href="/blogs/pytrack/whimsical-update-1/whimsical-update-1.html">Whimsical Update 1</a></h3>
+                                <p>
+                                    Random Update for my first ever project Pytrack.
+                                </p>
                             </article>
                         </li>
                         <li>
                             <article class="box post-summary">
-                                <h3><a href="#">And Another</a></h3>
-                                <ul class="meta">
-                                    <li class="icon fa-clock">Yesterday</li>
-                                    <li class="icon fa-comments"><a href="#">184</a></li>
-                                </ul>
+                                <h3><a href="/blogs/art/art-start/art-start.html">My art journey</a></h3>
+                                <p>
+                                    Journey of me picking up my pencil again.
+                                </p>
                             </article>
                         </li>
                         <li>
                             <article class="box post-summary">
-                                <h3><a href="#">And Another</a></h3>
-                                <ul class="meta">
-                                    <li class="icon fa-clock">2 days ago</li>
-                                    <li class="icon fa-comments"><a href="#">286</a></li>
-                                </ul>
+                                <h3><a href="/blogs/gamedev/visualizing-math-with-unity/generating-sine-wave/generating-sine-wave.html">Generating Sine Wave</a></h3>
+                               >p>
+                                    Let's visualize math using Unity.
+                               </p>
                             </article>
                         </li>
                         <li>
                             <article class="box post-summary">
-                                <h3><a href="#">And One More</a></h3>
-                                <ul class="meta">
-                                    <li class="icon fa-clock">3 days ago</li>
-                                    <li class="icon fa-comments"><a href="#">8,086</a></li>
-                                </ul>
+                                <h3><a href="#">CodeGraphy Panning Stage</a></h3>
+                                <p>
+                                    Information before action is one of my principles. Always do your research first.
+                                </p>
                             </article>
                         </li>
                     </ul>
-                    <a href="#" class="button alt">Archives</a>
+                    <!-- <a href="#" class="button alt">Archives</a> -->
 
             </div>
         </div>
